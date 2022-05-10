@@ -1,7 +1,6 @@
 CC              = gcc
 
 PREFIX          = /usr/local
-APPLICATIONS    = /usr/share/applications
 
 all: timetaken clean
 

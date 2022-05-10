@@ -33,10 +33,11 @@ int main(int argc, char *argv[]) {
 		minutes = 60 - tm1;
 		minutes += 60 * hours;
 		minutes += tm2;
-		hours = minutes / 60;
 	}
 	else
 		minutes = tm2 - tm1;
+
+	hours = minutes / 60;
 
 	printf("%01.2f hours or %01.0f minutes\n", hours, minutes);
 
