@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
 		return 1;
 	}
 
-	else if(strlen(argv[1]) != 5 && strlen(argv[2]) != 5) {
+	else if(strnlen(argv[1], 6) != 5 || strnlen(argv[2], 6) != 5) {
 		fputs("failed - incorrect format of argument\n", stderr);
 		return 1;
 	}
